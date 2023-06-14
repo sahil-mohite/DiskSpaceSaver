@@ -23,7 +23,9 @@ On Linux, disk storage is limited. Let’s say, one application is running, and 
 8. Set up a cron job to run the script automatically at a specified interval, use the following steps:
     a. Open the cron table for editing using the command: crontab -e.
     b. Add a new line to the cron table in the following format to run the script daily at a specific time (replace /path/to/script with the actual path to your script):
-        0 0 * * * /path/to/script/log_archiver.sh
+  
+    0 0 * * * /path/to/script/log_archiver.sh
+
     This example runs the script at 12:00 AM (midnight) every day. You can customize the timing based on your needs using the cron syntax.
     c. Save the changes and exit the editor.
 
